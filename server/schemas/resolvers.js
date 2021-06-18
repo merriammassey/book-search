@@ -35,9 +35,23 @@ const resolvers = {
 
       return user;
     },
+
+    saveBook: async (parent, args, context) => {
+      const user = await User.findByIdAndUpdate(
+        { _id: context.user._id },
+        { $push: { savedBooks: args.bookData } },
+        { new: true }
+      );
+    },
+
+    removeBook: async (parent, args, context) => {
+      const user = await User.findByIdAndUpdate(
+        { _id: context.user._id },
+        { $pull: { savedBooks: args.bookData } },
+        { new: true }
+      );
+    },
   },
-  saveBook: async () => {},
-  deleteBook: async () => {},
 };
 
 module.exports = resolvers;
