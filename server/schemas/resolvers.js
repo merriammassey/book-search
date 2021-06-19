@@ -38,11 +38,15 @@ const resolvers = {
     },
 
     saveBook: async (parent, args, context) => {
-      const user = await User.findByIdAndUpdate(
-        { _id: context.user._id },
-        { $push: { savedBooks: args.bookData } },
-        { new: true }
-      );
+      if (context.user) {
+        const user = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: args.bookData } },
+          { new: true }
+        );
+        console.log(user);
+        return { user };
+      }
     },
 
     removeBook: async (parent, args, context) => {
