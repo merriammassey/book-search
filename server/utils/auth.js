@@ -34,6 +34,7 @@ module.exports = {
     }
 
     // send to next endpoint
-    //next();
+    // next();
+    return req;
   },
 };

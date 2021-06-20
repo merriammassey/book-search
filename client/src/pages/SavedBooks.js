@@ -49,7 +49,7 @@ const SavedBooks = () => {
     variables: { username: userParam },
   });
   //when get_me is run, repsonse returns our data; query_user returns data in user property
-  const user = data?.me || data?.user || {};
+  const userData = data?.me || data?.user || {};
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
