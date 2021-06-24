@@ -39,8 +39,8 @@ const typeDefs = gql`
       image: String
       link: String
     ): User
-    removeBook(bookId: String!): User
     addUser(username: String!, email: String!, password: String!): Auth
+    removeBook(bookId: String!): User
   }
 `;
 
