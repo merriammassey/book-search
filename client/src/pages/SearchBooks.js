@@ -23,7 +23,6 @@ const SearchBooks = () => {
   const [searchedBooks, setSearchedBooks] = useState([]);
   // create state for holding our search field data
   const [searchInput, setSearchInput] = useState("");
-
   // create state to hold saved bookId values
   const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
 
@@ -80,7 +79,7 @@ const SearchBooks = () => {
     try {
       //const response = await saveBook(bookToSave, token);
       await saveBook({
-        variables: { bookID: book.bookId },
+        variables: { bookId },
       });
       //if (!response.ok) {
       //throw new Error("something went wrong!");
