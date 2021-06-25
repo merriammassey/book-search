@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 //replace addUser() with ADD_USER mutation
 //import { createUser } from "../utils/API";
@@ -22,6 +22,14 @@ const SignupForm = () => {
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
   //added
+
+  useEffect(() => {
+    if (error) {
+      setShowAlert(true);
+    } else {
+      setShowAlert(false);
+    }
+  }, [error]);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -59,7 +67,6 @@ const SignupForm = () => {
       Auth.login(data.addUser.token);
     } catch (error) {
       console.error(error);
-      //setShowAlert(false);
     }
     setUserFormData({
       username: "",
