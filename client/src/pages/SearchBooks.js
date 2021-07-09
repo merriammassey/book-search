@@ -79,7 +79,6 @@ const SearchBooks = () => {
 
     try {
       //const response = await saveBook(bookToSave, token);
-      //mutation
       await saveBook({
         variables: {
           authors: bookToSave.authors,
