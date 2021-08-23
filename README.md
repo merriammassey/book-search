@@ -23,7 +23,7 @@ Clone the repo. Then, from the terminal in the root directory, run `npm i` then 
 Users can search for books and create an account/log in to save them for future reference.
 
 ## Deployment
-(https://stark-dusk-64999.herokuapp.com/)[Visit the deployed app here]
+[Visit the deployed app here](https://stark-dusk-64999.herokuapp.com/)
 
 ## Screenshot
 
