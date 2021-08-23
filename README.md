@@ -24,7 +24,7 @@ Users can search for books and create an account/log in to save them for future 
 
 ## Deployment
 
-Visit the deployed app here(https://github.com/merriammassey/book-search/deployments/activity_log?environment=stark-dusk-64999)
+[https://github.com/merriammassey/book-search/deployments/activity_log?environment=stark-dusk-64999]Visit the deployed app here
 
 ## Screenshot
 
