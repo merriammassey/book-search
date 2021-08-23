@@ -8,6 +8,7 @@ Refactor of a functioning Google Books API search engine built with a RESTful AP
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Deployment](#deployment)
 - [Screenshot](#screenshot)
 - [License](#license)
 - [Contributions](#contributions)
@@ -20,6 +21,10 @@ Clone the repo. Then, from the terminal in the root directory, run `npm i` then 
 ## Usage
 
 Users can search for books and create an account/log in to save them for future reference.
+
+## Deployment
+
+Visit the deployed app here(https://github.com/merriammassey/book-search/deployments/activity_log?environment=stark-dusk-64999)
 
 ## Screenshot
 
