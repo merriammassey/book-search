@@ -15,7 +15,7 @@ Refactor of a functioning Google Books API search engine built with a RESTful AP
 
 ## Installation
 
-From the terminal in the root directory, run npm i then npm start.
+Clone the repo. Then, from the terminal in the root directory, run `npm i` then `npm start`.
 
 ## Usage
 
