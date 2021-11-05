@@ -11,7 +11,6 @@ Refactor of a functioning Google Books API search engine built with a RESTful AP
 - [Deployment](#deployment)
 - [Screenshot](#screenshot)
 - [License](#license)
-- [Contributions](#contributions)
 - [Questions](#questions)
 
 ## Installation
@@ -33,10 +32,6 @@ Users can search for books and create an account/log in to save them for future 
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [License: MIT](https://opensource.org/licenses/MIT)
-
-## Contributions
-
-Provided with a functioning web app, I refactored the API to use GraphQL.
 
 ## Questions
 
